@@ -543,20 +543,116 @@ footer p {
     max-width: 400px;
   }
   .deinostinfo table { min-width: 95vw; }
-}
+
+/* АДАПТАЦИЯ ЗА ДР УСТРОЙСТВА */
 @media (max-width: 700px) {
-  .navbar { flex-direction: column; gap: 0.5em; }
-  .container { padding: 1em 0.2em 130px 0.2em; }
-  .gallery, .offer-grid, .services-grid, .partners-logos, .about-grid {
+  body {
+    font-size: 16px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 1em 0.5em;
+  }
+
+  .logo img {
+    height: 24px;
+    margin-bottom: 0.5em;
+  }
+
+  .container,
+  .about-section,
+  .values-section,
+  .partners-section,
+  .services-section,
+  .deinostinfo,
+  .news-section,
+  .gallery-section,
+  .contact {
+    max-width: 100vw;
+    padding: 1em 0.5em;
+    margin: 1em 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .main,
+  main {
+    padding: 0;
+  }
+
+  .gallery {
+    flex-direction: column;
+    gap: 1em;
+    width: 100vw;
+    padding: 0;
+  }
+
+  .gallery-item,
+  .service-card,
+  .offer-card,
+  .about-grid div {
+    width: 95vw;
+    max-width: 400px;
+    min-width: unset;
+    margin: 0 auto 1em auto;
+  }
+
+  .gallery-item img {
+    height: 160px;
+  }
+
+  .desc {
+    padding: 1em;
+    margin: 0;
+  }
+
+  .services-section {
+    width: 100vw;
+    padding: 1em 0.5em;
+  }
+
+  .services-grid {
     flex-direction: column;
     gap: 1em;
     align-items: center;
   }
-  .gallery-item, .service-card, .offer-card, .about-grid div {
-    width: 95vw;
-    max-width: 400px;
+
+  .partners-logos {
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
   }
-  .deinostinfo table { min-width: 100%; font-size: 0.95em; }
-  .panel { padding: 1.5em 0.5em; }
-  section { padding: 1.2em 0.5em; }
+
+  .deinostinfo table {
+    min-width: 100%;
+    font-size: 0.95em;
+    overflow-x: auto;
+    display: block;
+  }
+
+  .contact-form {
+    max-width: 100vw;
+    padding: 1em 0.5em;
+  }
+
+  .hero {
+    height: auto;
+    padding: 2em 0.5em;
+    background-size: cover;
+  }
+
+  .hero h1 {
+    font-size: 1.5em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .hero a {
+    font-size: 1em;
+    padding: 0.7em 1em;
+  }
 }
