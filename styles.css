@@ -545,7 +545,7 @@ footer p {
   .deinostinfo table { min-width: 95vw; }
 
 /* АДАПТАЦИЯ ЗА ДР УСТРОЙСТВА */
-@media (max-width: 400px) {
+@media (max-width: 750px) {
   body {
     font-size: 16px;
   }
